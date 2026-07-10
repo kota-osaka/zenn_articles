@@ -1,0 +1,76 @@
+<svg viewBox="0 0 1600 780" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI','Hiragino Sans','Noto Sans JP',sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#7fbfff"/>
+    </marker>
+    <marker id="arrowGray" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#9aa3b0"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="1600" height="780" rx="24" fill="#111418"/>
+
+  <text x="60" y="86" font-size="40" font-weight="700" fill="#e8eaee">なぞって演奏する（グライド）</text>
+
+  <!-- パッド（バー6本 + 上部ラベル行） -->
+  <g>
+    <!-- ラベル行（root-bumps） -->
+    <g font-size="26" fill="#c9d0da" text-anchor="middle">
+      <path d="M100,200 h110 v-46 a23,23 0 0 0 -23,-23 h-64 a23,23 0 0 0 -23,23 z" fill="#3a4150"/>
+      <text x="155" y="176">C4</text>
+      <path d="M270,200 h110 v-46 a23,23 0 0 0 -23,-23 h-64 a23,23 0 0 0 -23,23 z" fill="#22262e"/>
+      <text x="325" y="176">C#4</text>
+      <path d="M440,200 h110 v-46 a23,23 0 0 0 -23,-23 h-64 a23,23 0 0 0 -23,23 z" fill="#3a4150"/>
+      <text x="495" y="176">D4</text>
+      <path d="M610,200 h110 v-46 a23,23 0 0 0 -23,-23 h-64 a23,23 0 0 0 -23,23 z" fill="#22262e"/>
+      <text x="665" y="176">D#4</text>
+      <path d="M780,200 h110 v-46 a23,23 0 0 0 -23,-23 h-64 a23,23 0 0 0 -23,23 z" fill="#3a4150"/>
+      <text x="835" y="176">E4</text>
+      <path d="M950,200 h110 v-46 a23,23 0 0 0 -23,-23 h-64 a23,23 0 0 0 -23,23 z" fill="#3a4150"/>
+      <text x="1005" y="176">F4</text>
+    </g>
+    <!-- バー本体 -->
+    <g fill="#2a2f38">
+      <rect x="100" y="206" width="110" height="440" rx="8"/>
+      <rect x="270" y="206" width="110" height="440" rx="8"/>
+      <rect x="440" y="206" width="110" height="440" rx="8"/>
+      <rect x="610" y="206" width="110" height="440" rx="8"/>
+      <rect x="780" y="206" width="110" height="440" rx="8"/>
+      <rect x="950" y="206" width="110" height="440" rx="8"/>
+    </g>
+  </g>
+
+  <!-- なぞりの軌跡 -->
+  <line x1="155" y1="430" x2="880" y2="430" stroke="#7fbfff" stroke-width="7" stroke-dasharray="2 20" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <!-- タッチ点 -->
+  <circle cx="155" cy="430" r="34" fill="#7fbfff" opacity="0.25"/>
+  <circle cx="155" cy="430" r="18" fill="#7fbfff"/>
+
+  <!-- 注釈1: バーの上 -->
+  <g>
+    <rect x="435" y="206" width="120" height="440" rx="8" fill="#7fbfff" opacity="0.14"/>
+    <line x1="495" y1="300" x2="495" y2="252" stroke="#9aa3b0" stroke-width="3" marker-end="url(#arrowGray)"/>
+    <rect x="315" y="300" width="360" height="56" rx="12" fill="#1e2a38"/>
+    <text x="495" y="337" font-size="27" fill="#e8eaee" text-anchor="middle">バーの上 ＝ ルート音が固定</text>
+  </g>
+
+  <!-- 注釈2: すき間 -->
+  <g>
+    <rect x="722" y="206" width="56" height="440" rx="6" fill="#e08050" opacity="0.22"/>
+    <line x1="753" y1="560" x2="753" y2="620" stroke="#e08050" stroke-width="3"/>
+    <rect x="540" y="620" width="510" height="56" rx="12" fill="#2a1f1a"/>
+    <text x="795" y="657" font-size="27" fill="#f0b295" text-anchor="middle">すき間 ＝ ルート音がなめらかに変化</text>
+  </g>
+
+  <!-- 右側の説明 -->
+  <g font-size="29" fill="#c9d0da">
+    <text x="1130" y="300">指を離さずに</text>
+    <text x="1130" y="348">横へなぞると、</text>
+    <text x="1130" y="396">音程が連続的に</text>
+    <text x="1130" y="444">変わります</text>
+    <text x="1130" y="530" font-size="25" fill="#8a93a0">縦の位置は5度の種類</text>
+    <text x="1130" y="572" font-size="25" fill="#8a93a0">（-5 / 5 / aug）を変えます</text>
+  </g>
+
+  <text x="60" y="732" font-size="24" fill="#8a93a0">※ コードグライドの左パッドの例。右パッドも同じ操作感です</text>
+</svg>

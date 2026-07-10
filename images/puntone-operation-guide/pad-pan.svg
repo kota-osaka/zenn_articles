@@ -1,0 +1,87 @@
+<svg viewBox="0 0 1600 780" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI','Hiragino Sans','Noto Sans JP',sans-serif">
+  <defs>
+    <marker id="arrowB" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#7fbfff"/>
+    </marker>
+    <marker id="arrowO" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#e0b050"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="1600" height="780" rx="24" fill="#111418"/>
+
+  <text x="60" y="86" font-size="40" font-weight="700" fill="#e8eaee">音域を動かす（パン・ズーム）</text>
+
+  <!-- パッド（ラベル行を強調） -->
+  <g>
+    <!-- ラベル行ハイライト枠 -->
+    <rect x="86" y="120" width="990" height="94" rx="18" fill="none" stroke="#7fbfff" stroke-width="4" stroke-dasharray="14 10"/>
+    <!-- ラベル行（root-bumps） -->
+    <g font-size="26" fill="#c9d0da" text-anchor="middle">
+      <path d="M100,200 h110 v-46 a23,23 0 0 0 -23,-23 h-64 a23,23 0 0 0 -23,23 z" fill="#3a4150"/>
+      <text x="155" y="176">A3</text>
+      <path d="M270,200 h110 v-46 a23,23 0 0 0 -23,-23 h-64 a23,23 0 0 0 -23,23 z" fill="#22262e"/>
+      <text x="325" y="176">A#3</text>
+      <path d="M440,200 h110 v-46 a23,23 0 0 0 -23,-23 h-64 a23,23 0 0 0 -23,23 z" fill="#3a4150"/>
+      <text x="495" y="176">B3</text>
+      <path d="M610,200 h110 v-46 a23,23 0 0 0 -23,-23 h-64 a23,23 0 0 0 -23,23 z" fill="#3a4150"/>
+      <text x="665" y="176">C4</text>
+      <path d="M780,200 h110 v-46 a23,23 0 0 0 -23,-23 h-64 a23,23 0 0 0 -23,23 z" fill="#22262e"/>
+      <text x="835" y="176">C#4</text>
+      <path d="M950,200 h110 v-46 a23,23 0 0 0 -23,-23 h-64 a23,23 0 0 0 -23,23 z" fill="#3a4150"/>
+      <text x="1005" y="176">D4</text>
+    </g>
+    <!-- バー本体（薄めに） -->
+    <g fill="#2a2f38" opacity="0.55">
+      <rect x="100" y="206" width="110" height="380" rx="8"/>
+      <rect x="270" y="206" width="110" height="380" rx="8"/>
+      <rect x="440" y="206" width="110" height="380" rx="8"/>
+      <rect x="610" y="206" width="110" height="380" rx="8"/>
+      <rect x="780" y="206" width="110" height="380" rx="8"/>
+      <rect x="950" y="206" width="110" height="380" rx="8"/>
+    </g>
+  </g>
+
+  <!-- ドラッグ操作（1本指・左右矢印） -->
+  <g>
+    <circle cx="580" cy="167" r="30" fill="#7fbfff" opacity="0.25"/>
+    <circle cx="580" cy="167" r="15" fill="#7fbfff"/>
+    <line x1="330" y1="167" x2="530" y2="167" stroke="#7fbfff" stroke-width="6" marker-start="url(#arrowB)"/>
+    <line x1="630" y1="167" x2="830" y2="167" stroke="#7fbfff" stroke-width="6" marker-end="url(#arrowB)"/>
+  </g>
+  <g>
+    <rect x="120" y="252" width="700" height="60" rx="12" fill="#1e2a38"/>
+    <text x="470" y="292" font-size="28" fill="#e8eaee" text-anchor="middle">音名ラベルの段を横にドラッグ ＝ 音域の移動（音は出ない）</text>
+  </g>
+
+  <!-- ピンチズーム -->
+  <g transform="translate(0,0)">
+    <g>
+      <circle cx="1240" cy="167" r="26" fill="#e0b050" opacity="0.25"/>
+      <circle cx="1240" cy="167" r="13" fill="#e0b050"/>
+      <circle cx="1400" cy="167" r="26" fill="#e0b050" opacity="0.25"/>
+      <circle cx="1400" cy="167" r="13" fill="#e0b050"/>
+      <line x1="1205" y1="167" x2="1130" y2="167" stroke="#e0b050" stroke-width="5" marker-end="url(#arrowO)"/>
+      <line x1="1435" y1="167" x2="1510" y2="167" stroke="#e0b050" stroke-width="5" marker-end="url(#arrowO)"/>
+    </g>
+    <rect x="1120" y="252" width="420" height="60" rx="12" fill="#2a2417"/>
+    <text x="1330" y="292" font-size="28" fill="#ecd39a" text-anchor="middle">2本指でピンチ ＝ ズーム</text>
+  </g>
+
+  <!-- 対比: バー部分は発音 -->
+  <g>
+    <circle cx="495" cy="450" r="30" fill="#e08050" opacity="0.25"/>
+    <circle cx="495" cy="450" r="15" fill="#e08050"/>
+    <rect x="620" y="420" width="440" height="60" rx="12" fill="#2a1f1a"/>
+    <text x="840" y="460" font-size="28" fill="#f0b295" text-anchor="middle">バーの部分にタッチ ＝ 発音</text>
+  </g>
+
+  <g font-size="27" fill="#c9d0da">
+    <text x="1130" y="450">「紙を横にすべらせる」</text>
+    <text x="1130" y="494">イメージで、鳴らしたい</text>
+    <text x="1130" y="538">音域まで無音のまま</text>
+    <text x="1130" y="582">移動できます</text>
+  </g>
+
+  <text x="60" y="732" font-size="24" fill="#8a93a0">※ コードグライド／デュアルパッド共通。左パッドでは発音中のパン開始（およびパン中の発音開始）はできません</text>
+</svg>
