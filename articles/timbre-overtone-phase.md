@@ -3,7 +3,7 @@ title: "音色とは何か(倍音構成と位相)"
 emoji: "🎻"
 type: "tech"
 topics: ["音響学", "フーリエ解析", "聴覚", "物理", "数学"]
-published: true
+published: false
 ---
 
 :::message
