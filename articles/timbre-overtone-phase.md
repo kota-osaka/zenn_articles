@@ -51,21 +51,15 @@ $$
 波形は波の形を示し、スペクトラムは、何 Hz の sin 波がどのような振幅で鳴っているかを示す。3つの波は、倍音構成が異なるのみで、はっきりと違う音に聞こえるはずである。つまり、倍音構成 $\{\alpha_n\}$ は音色に寄与する。
 
 **鋸波**(f0=330Hz, 5倍音まで) $\alpha_n = 1,\ -1/2,\ 1/3,\ -1/4,\ 1/5$　$\varphi_n = 0,\ 0,\ 0,\ 0,\ 0$
-WAVEFORM
 [![鋸波の波形。クリックで音声再生](/images/timbre-overtone-phase/w-shapes-sawtooth-wave.png)](https://sciencemusic.pages.dev/audio/timbre/w-shapes-sawtooth.mp3)
-SPECTRUM
 ![鋸波のスペクトラム](/images/timbre-overtone-phase/w-shapes-sawtooth-spec.png)
 
 **矩形波**(f0=330Hz, 5倍音まで) $\alpha_n = 1,\ 0,\ 1/3,\ 0,\ 1/5$　$\varphi_n = 0,\ 0,\ 0,\ 0,\ 0$
-WAVEFORM
 [![矩形波の波形。クリックで音声再生](/images/timbre-overtone-phase/w-shapes-square-wave.png)](https://sciencemusic.pages.dev/audio/timbre/w-shapes-square.mp3)
-SPECTRUM
 ![矩形波のスペクトラム](/images/timbre-overtone-phase/w-shapes-square-spec.png)
 
 **三角波**(f0=330Hz, 5倍音まで) $\alpha_n = 1,\ 0,\ -1/9,\ 0,\ 1/25$　$\varphi_n = 0,\ 0,\ 0,\ 0,\ 0$
-WAVEFORM
 [![三角波の波形。クリックで音声再生](/images/timbre-overtone-phase/w-shapes-triangle-wave.png)](https://sciencemusic.pages.dev/audio/timbre/w-shapes-triangle.mp3)
-SPECTRUM
 ![三角波のスペクトラム](/images/timbre-overtone-phase/w-shapes-triangle-spec.png)
 
 :::message
@@ -83,21 +77,15 @@ SPECTRUM
 まず、440Hz(ラ, A4) の鋸波、30倍音までの近似で試す。標準の鋸波、筆者が適当にずらした波、押すたびに位相がランダムに変わる波の3種類を用意した。
 
 **標準の鋸波**(440Hz) $\alpha_n = (-1)^{n-1}/n$　$\varphi_n = 0$
-WAVEFORM
 [![標準の鋸波(440Hz)の波形。クリックで音声再生](/images/timbre-overtone-phase/w-phase-440-standard-wave.png)](https://sciencemusic.pages.dev/audio/timbre/w-phase-440-standard.mp3)
-SPECTRUM
 ![標準の鋸波(440Hz)のスペクトラム](/images/timbre-overtone-phase/w-phase-440-standard-spec.png)
 
 **筆者が適当にずらした波**(440Hz) $\alpha_n = (-1)^{n-1}/n$　$\varphi_n = \pi n(n-1)/30$
-WAVEFORM
 [![位相をずらした鋸波(440Hz)の波形。クリックで音声再生](/images/timbre-overtone-phase/w-phase-440-schroeder-wave.png)](https://sciencemusic.pages.dev/audio/timbre/w-phase-440-schroeder.mp3)
-SPECTRUM
 ![位相をずらした鋸波(440Hz)のスペクトラム](/images/timbre-overtone-phase/w-phase-440-schroeder-spec.png)
 
-**ランダム位相(押すたび変化・1回の例)**(440Hz) $\alpha_n = 1/n$　$\varphi_n = $ (ランダム)
-WAVEFORM
+**ランダム位相(押すたび変化・1回の例)**(440Hz) $\alpha_n = 1/n$　$\varphi_n$ = (ランダム)
 ![ランダム位相の鋸波(440Hz)の波形の1例](/images/timbre-overtone-phase/w-phase-440-random-wave.png)
-SPECTRUM
 ![ランダム位相の鋸波(440Hz)のスペクトラムの1例](/images/timbre-overtone-phase/w-phase-440-random-spec.png)
 
 ランダム位相の波は、クリックのたびに違う位相になる。この性質上、音源をあらかじめ1つに固定して用意することができないため、上の図は1回分の波形の例のみを示している(音源は省略)。
@@ -115,21 +103,15 @@ SPECTRUM
 ところが、同じ操作をもっと低い音 (A1、55Hz) で行うと、聞き比べて違いを認識することができる。
 
 **標準の鋸波**(55Hz) $\alpha_n = (-1)^{n-1}/n$　$\varphi_n = 0$
-WAVEFORM
 [![標準の鋸波(55Hz)の波形。クリックで音声再生](/images/timbre-overtone-phase/w-phase-55-standard-wave.png)](https://sciencemusic.pages.dev/audio/timbre/w-phase-55-standard.mp3)
-SPECTRUM
 ![標準の鋸波(55Hz)のスペクトラム](/images/timbre-overtone-phase/w-phase-55-standard-spec.png)
 
 **筆者が適当にずらした波**(55Hz) $\alpha_n = (-1)^{n-1}/n$　$\varphi_n = \pi n(n-1)/30$
-WAVEFORM
 [![位相をずらした鋸波(55Hz)の波形。クリックで音声再生](/images/timbre-overtone-phase/w-phase-55-schroeder-wave.png)](https://sciencemusic.pages.dev/audio/timbre/w-phase-55-schroeder.mp3)
-SPECTRUM
 ![位相をずらした鋸波(55Hz)のスペクトラム](/images/timbre-overtone-phase/w-phase-55-schroeder-spec.png)
 
-**ランダム位相(押すたび変化・1回の例)**(55Hz) $\alpha_n = 1/n$　$\varphi_n = $ (ランダム)
-WAVEFORM
+**ランダム位相(押すたび変化・1回の例)**(55Hz) $\alpha_n = 1/n$　$\varphi_n$ = (ランダム)
 ![ランダム位相の鋸波(55Hz)の波形の1例](/images/timbre-overtone-phase/w-phase-55-random-wave.png)
-SPECTRUM
 ![ランダム位相の鋸波(55Hz)のスペクトラムの1例](/images/timbre-overtone-phase/w-phase-55-random-spec.png)
 
 :::message
@@ -165,35 +147,27 @@ $|f - f'| < \mathrm{ERB}\left(\dfrac{f+f'}{2}\right)$ であれば、蝸牛は�
 理屈上は、可聴域である 20~20kHz にこのような $\mathrm{ERB}(f)$ があれば、位相のずれが音色の差として認識できるはずである。オレンジ色の帯が、複数の倍音を含む最も低い $\mathrm{ERB}(f)$ を表す。
 
 **A0** (27.5 Hz)
-SPECTRUM
 ![A0(27.5Hz)のスペクトラムとERB帯](/images/timbre-overtone-phase/w-octaves-A0-spec.png)
 
 **A1** (55 Hz)
-SPECTRUM
 ![A1(55Hz)のスペクトラムとERB帯](/images/timbre-overtone-phase/w-octaves-A1-spec.png)
 
 **A2** (110 Hz)
-SPECTRUM
 ![A2(110Hz)のスペクトラムとERB帯](/images/timbre-overtone-phase/w-octaves-A2-spec.png)
 
 **A3** (220 Hz)
-SPECTRUM
 ![A3(220Hz)のスペクトラムとERB帯](/images/timbre-overtone-phase/w-octaves-A3-spec.png)
 
 **A4** (440 Hz)
-SPECTRUM
 ![A4(440Hz)のスペクトラムとERB帯](/images/timbre-overtone-phase/w-octaves-A4-spec.png)
 
 **A5** (880 Hz)
-SPECTRUM
 ![A5(880Hz)のスペクトラムとERB帯](/images/timbre-overtone-phase/w-octaves-A5-spec.png)
 
 **A6** (1760 Hz)
-SPECTRUM
 ![A6(1760Hz)のスペクトラムとERB帯](/images/timbre-overtone-phase/w-octaves-A6-spec.png)
 
 **A7** (3520 Hz)
-SPECTRUM
 ![A7(3520Hz)のスペクトラムとERB帯](/images/timbre-overtone-phase/w-octaves-A7-spec.png)
 
 各音は、クリックのたびに位相がランダムに変わる鋸波として鳴る。ランダム性ゆえに音源をあらかじめ用意することができないため、ここではスペクトラムの図版のみを示す。
