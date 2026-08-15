@@ -50,11 +50,14 @@ $$
 
 波形は波の形を示し、スペクトラムは、何 Hz の sin 波がどのような振幅で鳴っているかを示す。3つの波は、倍音構成が異なるのみで、はっきりと違う音に聞こえるはずである。つまり、倍音構成 $\{\alpha_n\}$ は音色に寄与する。
 
-[![鋸波(f0=330Hz, 5倍音まで)の波形とスペクトラム。クリックで音声再生](/images/timbre-overtone-phase/w-shapes-sawtooth.png)](https://sciencemusic.pages.dev/audio/timbre/w-shapes-sawtooth.mp3)
+**鋸波**(f0=330Hz, 5倍音まで) $\alpha_n = 1,\ -1/2,\ 1/3,\ -1/4,\ 1/5$　$\varphi_n = 0,\ 0,\ 0,\ 0,\ 0$
+[![鋸波の波形とスペクトラム。クリックで音声再生](/images/timbre-overtone-phase/w-shapes-sawtooth.png)](https://sciencemusic.pages.dev/audio/timbre/w-shapes-sawtooth.mp3)
 
-[![矩形波(f0=330Hz, 5倍音まで)の波形とスペクトラム。クリックで音声再生](/images/timbre-overtone-phase/w-shapes-square.png)](https://sciencemusic.pages.dev/audio/timbre/w-shapes-square.mp3)
+**矩形波**(f0=330Hz, 5倍音まで) $\alpha_n = 1,\ 0,\ 1/3,\ 0,\ 1/5$　$\varphi_n = 0,\ 0,\ 0,\ 0,\ 0$
+[![矩形波の波形とスペクトラム。クリックで音声再生](/images/timbre-overtone-phase/w-shapes-square.png)](https://sciencemusic.pages.dev/audio/timbre/w-shapes-square.mp3)
 
-[![三角波(f0=330Hz, 5倍音まで)の波形とスペクトラム。クリックで音声再生](/images/timbre-overtone-phase/w-shapes-triangle.png)](https://sciencemusic.pages.dev/audio/timbre/w-shapes-triangle.mp3)
+**三角波**(f0=330Hz, 5倍音まで) $\alpha_n = 1,\ 0,\ -1/9,\ 0,\ 1/25$　$\varphi_n = 0,\ 0,\ 0,\ 0,\ 0$
+[![三角波の波形とスペクトラム。クリックで音声再生](/images/timbre-overtone-phase/w-shapes-triangle.png)](https://sciencemusic.pages.dev/audio/timbre/w-shapes-triangle.mp3)
 
 :::message
 元記事では、この3つの波形をブラウザ上でインタラクティブに聞き比べられる。→ [倍音構成を聴き比べる](https://sciencemusic.pages.dev/timbre/#does-an-matter)
@@ -70,10 +73,13 @@ $$
 
 まず、440Hz(ラ, A4) の鋸波、30倍音までの近似で試す。標準の鋸波、筆者が適当にずらした波、押すたびに位相がランダムに変わる波の3種類を用意した。
 
+**標準の鋸波**(440Hz) $\alpha_n = (-1)^{n-1}/n$　$\varphi_n = 0$
 [![標準の鋸波(440Hz)の波形とスペクトラム。クリックで音声再生](/images/timbre-overtone-phase/w-phase-440-standard.png)](https://sciencemusic.pages.dev/audio/timbre/w-phase-440-standard.mp3)
 
+**筆者が適当にずらした波**(440Hz) $\alpha_n = (-1)^{n-1}/n$　$\varphi_n = \pi n(n-1)/30$
 [![位相をずらした鋸波(440Hz)の波形とスペクトラム。クリックで音声再生](/images/timbre-overtone-phase/w-phase-440-schroeder.png)](https://sciencemusic.pages.dev/audio/timbre/w-phase-440-schroeder.mp3)
 
+**ランダム位相(押すたび変化・1回の例)**(440Hz) $\alpha_n = 1/n$　$\varphi_n = $ (ランダム)
 ![ランダム位相の鋸波(440Hz)の波形とスペクトラムの1例](/images/timbre-overtone-phase/w-phase-440-random.png)
 
 ランダム位相の波は、クリックのたびに違う位相になる。この性質上、音源をあらかじめ1つに固定して用意することができないため、上の図は1回分の波形の例のみを示している(音源は省略)。
@@ -90,10 +96,13 @@ $$
 
 ところが、同じ操作をもっと低い音 (A1、55Hz) で行うと、聞き比べて違いを認識することができる。
 
+**標準の鋸波**(55Hz) $\alpha_n = (-1)^{n-1}/n$　$\varphi_n = 0$
 [![標準の鋸波(55Hz)の波形とスペクトラム。クリックで音声再生](/images/timbre-overtone-phase/w-phase-55-standard.png)](https://sciencemusic.pages.dev/audio/timbre/w-phase-55-standard.mp3)
 
+**筆者が適当にずらした波**(55Hz) $\alpha_n = (-1)^{n-1}/n$　$\varphi_n = \pi n(n-1)/30$
 [![位相をずらした鋸波(55Hz)の波形とスペクトラム。クリックで音声再生](/images/timbre-overtone-phase/w-phase-55-schroeder.png)](https://sciencemusic.pages.dev/audio/timbre/w-phase-55-schroeder.mp3)
 
+**ランダム位相(押すたび変化・1回の例)**(55Hz) $\alpha_n = 1/n$　$\varphi_n = $ (ランダム)
 ![ランダム位相の鋸波(55Hz)の波形とスペクトラムの1例](/images/timbre-overtone-phase/w-phase-55-random.png)
 
 :::message
@@ -128,13 +137,28 @@ $|f - f'| < \mathrm{ERB}\left(\dfrac{f+f'}{2}\right)$ であれば、蝸牛は�
 さらに、複数の倍音をその範囲に含む $\mathrm{ERB}(f)$ のうち、最も $f$ が小さいものを考える。
 理屈上は、可聴域である 20~20kHz にこのような $\mathrm{ERB}(f)$ があれば、位相のずれが音色の差として認識できるはずである。オレンジ色の帯が、複数の倍音を含む最も低い $\mathrm{ERB}(f)$ を表す。
 
+**A0** (27.5 Hz)
 ![A0(27.5Hz)のスペクトラムとERB帯](/images/timbre-overtone-phase/w-octaves-A0.png)
+
+**A1** (55 Hz)
 ![A1(55Hz)のスペクトラムとERB帯](/images/timbre-overtone-phase/w-octaves-A1.png)
+
+**A2** (110 Hz)
 ![A2(110Hz)のスペクトラムとERB帯](/images/timbre-overtone-phase/w-octaves-A2.png)
+
+**A3** (220 Hz)
 ![A3(220Hz)のスペクトラムとERB帯](/images/timbre-overtone-phase/w-octaves-A3.png)
+
+**A4** (440 Hz)
 ![A4(440Hz)のスペクトラムとERB帯](/images/timbre-overtone-phase/w-octaves-A4.png)
+
+**A5** (880 Hz)
 ![A5(880Hz)のスペクトラムとERB帯](/images/timbre-overtone-phase/w-octaves-A5.png)
+
+**A6** (1760 Hz)
 ![A6(1760Hz)のスペクトラムとERB帯](/images/timbre-overtone-phase/w-octaves-A6.png)
+
+**A7** (3520 Hz)
 ![A7(3520Hz)のスペクトラムとERB帯](/images/timbre-overtone-phase/w-octaves-A7.png)
 
 各音は、クリックのたびに位相がランダムに変わる鋸波として鳴る。ランダム性ゆえに音源をあらかじめ用意することができないため、ここではスペクトラムの図版のみを示す。
