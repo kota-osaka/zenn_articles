@@ -51,13 +51,13 @@ $$
 波形は波の形を示し、スペクトラムは、何 Hz の sin 波がどのような振幅で鳴っているかを示す。3つの波は、倍音構成が異なるのみで、はっきりと違う音に聞こえるはずである。つまり、倍音構成 $\{\alpha_n\}$ は音色に寄与する。
 
 ![鋸波(f0=330Hz, 5倍音まで)の波形とスペクトラム](/images/timbre-overtone-phase/w-shapes-sawtooth.png)
-🔊 [鋸波を聴く](/audio/timbre-overtone-phase/w-shapes-sawtooth.mp3)
+🔊 [鋸波を聴く](https://sciencemusic.pages.dev/audio/timbre/w-shapes-sawtooth.mp3)
 
 ![矩形波(f0=330Hz, 5倍音まで)の波形とスペクトラム](/images/timbre-overtone-phase/w-shapes-square.png)
-🔊 [矩形波を聴く](/audio/timbre-overtone-phase/w-shapes-square.mp3)
+🔊 [矩形波を聴く](https://sciencemusic.pages.dev/audio/timbre/w-shapes-square.mp3)
 
 ![三角波(f0=330Hz, 5倍音まで)の波形とスペクトラム](/images/timbre-overtone-phase/w-shapes-triangle.png)
-🔊 [三角波を聴く](/audio/timbre-overtone-phase/w-shapes-triangle.mp3)
+🔊 [三角波を聴く](https://sciencemusic.pages.dev/audio/timbre/w-shapes-triangle.mp3)
 
 :::message
 元記事では、この3つの波形をブラウザ上でインタラクティブに聞き比べられる。→ [倍音構成を聴き比べる](https://sciencemusic.pages.dev/timbre/#does-an-matter)
@@ -74,10 +74,10 @@ $$
 まず、440Hz(ラ, A4) の鋸波、30倍音までの近似で試す。標準の鋸波、筆者が適当にずらした波、押すたびに位相がランダムに変わる波の3種類を用意した。
 
 ![標準の鋸波(440Hz)の波形とスペクトラム](/images/timbre-overtone-phase/w-phase-440-standard.png)
-🔊 [標準の鋸波(440Hz)を聴く](/audio/timbre-overtone-phase/w-phase-440-standard.mp3)
+🔊 [標準の鋸波(440Hz)を聴く](https://sciencemusic.pages.dev/audio/timbre/w-phase-440-standard.mp3)
 
 ![位相をずらした鋸波(440Hz)の波形とスペクトラム](/images/timbre-overtone-phase/w-phase-440-schroeder.png)
-🔊 [位相をずらした鋸波(440Hz)を聴く](/audio/timbre-overtone-phase/w-phase-440-schroeder.mp3)
+🔊 [位相をずらした鋸波(440Hz)を聴く](https://sciencemusic.pages.dev/audio/timbre/w-phase-440-schroeder.mp3)
 
 ![ランダム位相の鋸波(440Hz)の波形とスペクトラムの1例](/images/timbre-overtone-phase/w-phase-440-random.png)
 
@@ -96,10 +96,10 @@ $$
 ところが、同じ操作をもっと低い音 (A1、55Hz) で行うと、聞き比べて違いを認識することができる。
 
 ![標準の鋸波(55Hz)の波形とスペクトラム](/images/timbre-overtone-phase/w-phase-55-standard.png)
-🔊 [標準の鋸波(55Hz)を聴く](/audio/timbre-overtone-phase/w-phase-55-standard.mp3)
+🔊 [標準の鋸波(55Hz)を聴く](https://sciencemusic.pages.dev/audio/timbre/w-phase-55-standard.mp3)
 
 ![位相をずらした鋸波(55Hz)の波形とスペクトラム](/images/timbre-overtone-phase/w-phase-55-schroeder.png)
-🔊 [位相をずらした鋸波(55Hz)を聴く](/audio/timbre-overtone-phase/w-phase-55-schroeder.mp3)
+🔊 [位相をずらした鋸波(55Hz)を聴く](https://sciencemusic.pages.dev/audio/timbre/w-phase-55-schroeder.mp3)
 
 ![ランダム位相の鋸波(55Hz)の波形とスペクトラムの1例](/images/timbre-overtone-phase/w-phase-55-random.png)
 
