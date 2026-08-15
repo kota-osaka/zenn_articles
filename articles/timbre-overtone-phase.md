@@ -31,13 +31,13 @@ sin波だけでなく、矩形波や鋸波、パルス波のような波の形�
 
 ## 土台となる知識
 
-> **Theorem — フーリエの定理**
->
-> 周期 $T$(基本周波数 $f_0 = 1/T$) を持つ周期的な波 $p(t)$ は、一意に次の形に展開できる。
->
-> $$
-> p(t) = \sum_{n=1}^{\infty} \alpha_n \sin(2\pi n f_0 t + \varphi_n)
-> $$
+**Theorem — フーリエの定理**
+
+周期 $T$(基本周波数 $f_0 = 1/T$) を持つ周期的な波 $p(t)$ は、一意に次の形に展開できる。
+
+$$
+p(t) = \sum_{n=1}^{\infty} \alpha_n \sin(2\pi n f_0 t + \varphi_n)
+$$
 
 ざっくりとは、「どのような音程の音も、様々な sin 波をうまく足し合わせることで再現できる」と主張している。
 もう少し詳しくは、「どのような周波数の波も、その周波数を整数倍 (n倍) した周波数の sin 波を、適当な振幅 ($\alpha_n$) で、適当な位相 ($\varphi_n$) だけずらして足し合わせることで再現できる」との主張である。
@@ -48,11 +48,20 @@ sin波だけでなく、矩形波や鋸波、パルス波のような波の形�
 
 まず振幅 $\alpha_n$ から確かめる。数列 $\{\alpha_n\}$ は、n倍音をどれだけ含むかという情報であるため、**倍音構成**と呼ぶ。位相はすべて揃えたまま、倍音構成を変えた波をいくつか準備した。天下り的だが、特徴的な3つの波形 — 鋸波・矩形波・三角波を、5倍音までの近似で用意した。
 
-:::message
-元記事では、この3つの波形を実際に鳴らして聞き比べられる。→ [倍音構成を聴き比べる](https://sciencemusic.pages.dev/timbre/#does-an-matter)
-:::
-
 波形は波の形を示し、スペクトラムは、何 Hz の sin 波がどのような振幅で鳴っているかを示す。3つの波は、倍音構成が異なるのみで、はっきりと違う音に聞こえるはずである。つまり、倍音構成 $\{\alpha_n\}$ は音色に寄与する。
+
+![鋸波(f0=330Hz, 5倍音まで)の波形とスペクトラム](/images/timbre-overtone-phase/w-shapes-sawtooth.png)
+🔊 [鋸波を聴く](/audio/timbre-overtone-phase/w-shapes-sawtooth.mp3)
+
+![矩形波(f0=330Hz, 5倍音まで)の波形とスペクトラム](/images/timbre-overtone-phase/w-shapes-square.png)
+🔊 [矩形波を聴く](/audio/timbre-overtone-phase/w-shapes-square.mp3)
+
+![三角波(f0=330Hz, 5倍音まで)の波形とスペクトラム](/images/timbre-overtone-phase/w-shapes-triangle.png)
+🔊 [三角波を聴く](/audio/timbre-overtone-phase/w-shapes-triangle.mp3)
+
+:::message
+元記事では、この3つの波形をブラウザ上でインタラクティブに聞き比べられる。→ [倍音構成を聴き比べる](https://sciencemusic.pages.dev/timbre/#does-an-matter)
+:::
 
 ### オームの音響法則
 
@@ -64,8 +73,18 @@ sin波だけでなく、矩形波や鋸波、パルス波のような波の形�
 
 まず、440Hz(ラ, A4) の鋸波、30倍音までの近似で試す。標準の鋸波、筆者が適当にずらした波、押すたびに位相がランダムに変わる波の3種類を用意した。
 
+![標準の鋸波(440Hz)の波形とスペクトラム](/images/timbre-overtone-phase/w-phase-440-standard.png)
+🔊 [標準の鋸波(440Hz)を聴く](/audio/timbre-overtone-phase/w-phase-440-standard.mp3)
+
+![位相をずらした鋸波(440Hz)の波形とスペクトラム](/images/timbre-overtone-phase/w-phase-440-schroeder.png)
+🔊 [位相をずらした鋸波(440Hz)を聴く](/audio/timbre-overtone-phase/w-phase-440-schroeder.mp3)
+
+![ランダム位相の鋸波(440Hz)の波形とスペクトラムの1例](/images/timbre-overtone-phase/w-phase-440-random.png)
+
+ランダム位相の波は、クリックのたびに違う位相になる。この性質上、音源をあらかじめ1つに固定して用意することができないため、上の図は1回分の波形の例のみを示している(音源は省略)。
+
 :::message
-元記事では、位相を変えた440Hzの鋸波を実際に聞き比べられる。→ [440Hzでの位相違いを聴く](https://sciencemusic.pages.dev/timbre/#does-phase-matter)
+元記事では、これら3種類の440Hzの鋸波(ランダム位相を含む)をブラウザ上でインタラクティブに聞き比べられる。→ [440Hzでの位相違いを聴く](https://sciencemusic.pages.dev/timbre/#does-phase-matter)
 :::
 
 これらの音は、聞き比べてもほとんど区別がつかない。区別がつく人は、相当に耳がいい。
@@ -76,8 +95,16 @@ sin波だけでなく、矩形波や鋸波、パルス波のような波の形�
 
 ところが、同じ操作をもっと低い音 (A1、55Hz) で行うと、聞き比べて違いを認識することができる。
 
+![標準の鋸波(55Hz)の波形とスペクトラム](/images/timbre-overtone-phase/w-phase-55-standard.png)
+🔊 [標準の鋸波(55Hz)を聴く](/audio/timbre-overtone-phase/w-phase-55-standard.mp3)
+
+![位相をずらした鋸波(55Hz)の波形とスペクトラム](/images/timbre-overtone-phase/w-phase-55-schroeder.png)
+🔊 [位相をずらした鋸波(55Hz)を聴く](/audio/timbre-overtone-phase/w-phase-55-schroeder.mp3)
+
+![ランダム位相の鋸波(55Hz)の波形とスペクトラムの1例](/images/timbre-overtone-phase/w-phase-55-random.png)
+
 :::message
-元記事では、55Hzでの位相違いも同様に聴き比べられる。→ [55Hzでの位相違いを聴く](https://sciencemusic.pages.dev/timbre/#low-notes)
+元記事では、55Hzでの位相違い(ランダム位相を含む)も同様にブラウザ上で聴き比べられる。→ [55Hzでの位相違いを聴く](https://sciencemusic.pages.dev/timbre/#low-notes)
 :::
 
 440Hz の場合とは違い、この条件では位相を変えると、音色が変わって聞こえることがある。パターソン (Patterson, 1973) は、倍音構成を固定したまま位相だけを変えた複合音を聞き比べる実験を行い、倍音が密集する低い基音の条件では位相によって音色が変わる一方、倍音がまばらな高い基音の条件ではその違いがほとんど聞こえないことを報告した。なぜ低い音でこのような現象が起こるのか、そのメカニズムを次の章で見ていく。
@@ -106,10 +133,21 @@ $|f - f'| < \mathrm{ERB}\left(\dfrac{f+f'}{2}\right)$ であれば、蝸牛は�
 
 オクターブ違いのラ（A0～A7）の鋸波のスペクトラムを考える。スペクトラム上では、倍音が等間隔で並ぶ。
 さらに、複数の倍音をその範囲に含む $\mathrm{ERB}(f)$ のうち、最も $f$ が小さいものを考える。
-理屈上は、可聴域である 20~20kHz にこのような $\mathrm{ERB}(f)$ があれば、位相のずれが音色の差として認識できるはずである。
+理屈上は、可聴域である 20~20kHz にこのような $\mathrm{ERB}(f)$ があれば、位相のずれが音色の差として認識できるはずである。オレンジ色の帯が、複数の倍音を含む最も低い $\mathrm{ERB}(f)$ を表す。
+
+![A0(27.5Hz)のスペクトラムとERB帯](/images/timbre-overtone-phase/w-octaves-A0.png)
+![A1(55Hz)のスペクトラムとERB帯](/images/timbre-overtone-phase/w-octaves-A1.png)
+![A2(110Hz)のスペクトラムとERB帯](/images/timbre-overtone-phase/w-octaves-A2.png)
+![A3(220Hz)のスペクトラムとERB帯](/images/timbre-overtone-phase/w-octaves-A3.png)
+![A4(440Hz)のスペクトラムとERB帯](/images/timbre-overtone-phase/w-octaves-A4.png)
+![A5(880Hz)のスペクトラムとERB帯](/images/timbre-overtone-phase/w-octaves-A5.png)
+![A6(1760Hz)のスペクトラムとERB帯](/images/timbre-overtone-phase/w-octaves-A6.png)
+![A7(3520Hz)のスペクトラムとERB帯](/images/timbre-overtone-phase/w-octaves-A7.png)
+
+各音は、クリックのたびに位相がランダムに変わる鋸波として鳴る。ランダム性ゆえに音源をあらかじめ用意することができないため、ここではスペクトラムの図版のみを示す。
 
 :::message
-元記事では、A0〜A7の各オクターブについてスペクトラムを図示し、カードをクリックすると位相をランダムにずらした鋸波が実際に鳴る。→ [オクターブ違いで聴き比べる](https://sciencemusic.pages.dev/timbre/#octaves)
+元記事では、これらA0〜A7のスペクトラムに対応する鋸波(クリックのたびに位相がランダムに変わる)をブラウザ上で実際に鳴らして確認できる。→ [オクターブ違いで聴き比べる](https://sciencemusic.pages.dev/timbre/#octaves)
 :::
 
 ERB 内に倍音が複数入っているというだけでは、必ずしも聞こえ方の違いとして現れるとは限らない。
